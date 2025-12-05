@@ -1,3 +1,5 @@
+ï»¿#pragma execution_character_set("utf-8")
+
 #include "Reaction.h"
 #include "FormulaFormatter.h"
 #include <iostream>
@@ -23,16 +25,16 @@ bool Reaction::matchReactants(const vector<string>& formulas) const {
         return false;
     }
     
-    // ´´½¨·´Ó¦Îï»¯Ñ§Ê½ÁÐ±í
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï»¯Ñ§Ê½ï¿½Ð±ï¿½
     vector<string> reactantFormulas;
     for (const auto& r : reactants) {
         reactantFormulas.push_back(r.formula);
     }
     
-    // ´´½¨ÊäÈë»¯Ñ§Ê½µÄ¸±±¾ÓÃÓÚ±È½Ï
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë»¯Ñ§Ê½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±È½ï¿½
     vector<string> inputFormulas = formulas;
     
-    // ÅÅÐòºó±È½Ï
+    // ï¿½ï¿½ï¿½ï¿½ï¿½È½ï¿½
     sort(reactantFormulas.begin(), reactantFormulas.end());
     sort(inputFormulas.begin(), inputFormulas.end());
     
@@ -42,7 +44,7 @@ bool Reaction::matchReactants(const vector<string>& formulas) const {
 string Reaction::getEquationString() const {
     string equation = "";
     
-    // Ìí¼Ó·´Ó¦Îï
+    // ï¿½ï¿½Ó·ï¿½Ó¦ï¿½ï¿½
     for (size_t i = 0; i < reactants.size(); i++) {
         if (i > 0) equation += " + ";
         if (reactants[i].stoichiometry > 1) {
@@ -51,14 +53,14 @@ string Reaction::getEquationString() const {
         equation += FormulaFormatter::formatFormula(reactants[i].formula);
     }
     
-    // Ìí¼Ó¼ýÍ·ºÍÌõ¼þ
+    // ï¿½ï¿½Ó¼ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     if (!condition.empty()) {
-        equation += " ¡ª[" + condition + "]¡ú ";
+        equation += " ï¿½ï¿½[" + condition + "]ï¿½ï¿½ ";
     } else {
-        equation += " ¡ú ";
+        equation += " ï¿½ï¿½ ";
     }
     
-    // Ìí¼Ó²úÎï
+    // ï¿½ï¿½Ó²ï¿½ï¿½ï¿½
     for (size_t i = 0; i < products.size(); i++) {
         if (i > 0) equation += " + ";
         if (products[i].stoichiometry > 1) {
@@ -71,19 +73,19 @@ string Reaction::getEquationString() const {
 }
 
 void Reaction::display() const {
-    cout << "·´Ó¦Ãû³Æ: " << name << endl;
-    cout << "·´Ó¦·½³ÌÊ½: " << getEquationString() << endl;
-    cout << "·´Ó¦ÀàÐÍ: " << type << endl;
-    cout << "ÃèÊö: " << description << endl;
+    cout << "ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½: " << name << endl;
+    cout << "ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ê½: " << getEquationString() << endl;
+    cout << "ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½: " << type << endl;
+    cout << "ï¿½ï¿½ï¿½ï¿½: " << description << endl;
 }
 
-// ¸¨Öúº¯Êý£º·Ö¸î×Ö·û´®
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
 static vector<string> split(const string& str, char delimiter) {
     vector<string> tokens;
     stringstream ss(str);
     string token;
     while (getline(ss, token, delimiter)) {
-        // È¥³ýÇ°ºó¿Õ¸ñ
+        // È¥ï¿½ï¿½Ç°ï¿½ï¿½Õ¸ï¿½
         size_t start = token.find_first_not_of(" \t\r\n");
         size_t end = token.find_last_not_of(" \t\r\n");
         if (start != string::npos && end != string::npos) {
@@ -96,7 +98,7 @@ static vector<string> split(const string& str, char delimiter) {
 Reaction Reaction::loadFromFile(const string& filePath) {
     ifstream file(filePath);
     if (!file.is_open()) {
-        cerr << "ÎÞ·¨´ò¿ªÎÄ¼þ: " << filePath << endl;
+        cerr << "ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: " << filePath << endl;
         return Reaction();
     }
     
@@ -112,34 +114,34 @@ Reaction Reaction::loadFromFile(const string& filePath) {
             string key = line.substr(0, colonPos);
             string value = line.substr(colonPos + 1);
             
-            // È¥³ýÇ°ºó¿Õ¸ñ
+            // È¥ï¿½ï¿½Ç°ï¿½ï¿½Õ¸ï¿½
             size_t start = value.find_first_not_of(" \t\r\n");
             size_t end = value.find_last_not_of(" \t\r\n");
             if (start != string::npos && end != string::npos) {
                 value = value.substr(start, end - start + 1);
             }
             
-            if (key == "·´Ó¦Ãû³Æ") {
+            if (key == "ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½") {
                 name = value;
-            } else if (key == "·´Ó¦Îï") {
+            } else if (key == "ï¿½ï¿½Ó¦ï¿½ï¿½") {
                 reactantFormulas = split(value, ',');
-            } else if (key == "·´Ó¦Îï»¯Ñ§¼ÆÁ¿Êý") {
+            } else if (key == "ï¿½ï¿½Ó¦ï¿½ï»¯Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") {
                 vector<string> numbers = split(value, ',');
                 for (const auto& num : numbers) {
                     reactantStoich.push_back(stoi(num));
                 }
-            } else if (key == "²úÎï") {
+            } else if (key == "ï¿½ï¿½ï¿½ï¿½") {
                 productFormulas = split(value, ',');
-            } else if (key == "²úÎï»¯Ñ§¼ÆÁ¿Êý") {
+            } else if (key == "ï¿½ï¿½ï¿½ï»¯Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") {
                 vector<string> numbers = split(value, ',');
                 for (const auto& num : numbers) {
                     productStoich.push_back(stoi(num));
                 }
-            } else if (key == "·´Ó¦Ìõ¼þ") {
+            } else if (key == "ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½") {
                 condition = value;
-            } else if (key == "·´Ó¦ÀàÐÍ") {
+            } else if (key == "ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½") {
                 type = value;
-            } else if (key == "ÃèÊö") {
+            } else if (key == "ï¿½ï¿½ï¿½ï¿½") {
                 description = value;
             }
         }
@@ -147,7 +149,7 @@ Reaction Reaction::loadFromFile(const string& filePath) {
     
     file.close();
     
-    // ×é×°·´Ó¦Îï
+    // ï¿½ï¿½×°ï¿½ï¿½Ó¦ï¿½ï¿½
     for (size_t i = 0; i < reactantFormulas.size(); i++) {
         ReactionComponent rc;
         rc.formula = reactantFormulas[i];
@@ -155,7 +157,7 @@ Reaction Reaction::loadFromFile(const string& filePath) {
         reactants.push_back(rc);
     }
     
-    // ×é×°²úÎï
+    // ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½
     for (size_t i = 0; i < productFormulas.size(); i++) {
         ReactionComponent pc;
         pc.formula = productFormulas[i];

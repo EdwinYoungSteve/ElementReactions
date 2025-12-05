@@ -1,3 +1,5 @@
+ï»¿#pragma execution_character_set("utf-8")
+
 #include <iostream>
 #include <vector>
 #include <limits>
@@ -9,57 +11,57 @@ int main() {
     ReactionSystem system;
     
     cout << "========================================" << endl;
-    cout << "    »¶Ó­Ê¹ÓÃ»¯Ñ§·´Ó¦Ä£ÄâÏµÍ³" << endl;
+    cout << "    ï¿½ï¿½Ó­Ê¹ï¿½Ã»ï¿½Ñ§ï¿½ï¿½Ó¦Ä£ï¿½ï¿½ÏµÍ³" << endl;
     cout << "========================================\n" << endl;
     
-    // ¼ÓÔØ»¯ºÏÎï¿â
+    // ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     system.loadCompounds("src/main/resources/compounds");
     
-    // ¼ÓÔØ·´Ó¦¿â
+    // ï¿½ï¿½ï¿½Ø·ï¿½Ó¦ï¿½ï¿½
     system.loadReactions("src/main/resources/reactions");
     
     while (true) {
         system.displayLibrary();
         
-        cout << "ÇëÑ¡ÔñÒª»ìºÏµÄÊÔ¼Á£¨ÊäÈë±àºÅ£¬ÓÃ¿Õ¸ñ·Ö¸ô£¬ÊäÈë0½áÊø£©£º" << endl;
-        cout << "Ê¾Àý£º1 2£¨Ñ¡ÔñÇâÆøºÍÑõÆø£©" << endl;
+        cout << "ï¿½ï¿½Ñ¡ï¿½ï¿½Òªï¿½ï¿½Ïµï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½ï¿½Ã¿Õ¸ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
+        cout << "Ê¾ï¿½ï¿½ï¿½ï¿½1 2ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
         cout << "> ";
         
         vector<int> selectedIndices;
         string input;
         getline(cin, input);
         
-        // ½âÎöÊäÈë
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         size_t pos = 0;
         while (pos < input.length()) {
-            // Ìø¹ý¿Õ¸ñ
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Õ¸ï¿½
             while (pos < input.length() && input[pos] == ' ') pos++;
             if (pos >= input.length()) break;
             
-            // ¶ÁÈ¡Êý×Ö
+            // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
             size_t endPos = pos;
             while (endPos < input.length() && input[endPos] != ' ') endPos++;
             
             try {
                 int num = stoi(input.substr(pos, endPos - pos));
                 if (num == 0) {
-                    cout << "\n¸ÐÐ»Ê¹ÓÃ»¯Ñ§·´Ó¦Ä£ÄâÏµÍ³£¡ÔÙ¼û£¡" << endl;
+                    cout << "\nï¿½ï¿½Ð»Ê¹ï¿½Ã»ï¿½Ñ§ï¿½ï¿½Ó¦Ä£ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½Ù¼ï¿½ï¿½ï¿½" << endl;
                     return 0;
                 }
                 if (num > 0) {
-                    selectedIndices.push_back(num - 1);  // ×ª»»Îª0-basedË÷Òý
+                    selectedIndices.push_back(num - 1);  // ×ªï¿½ï¿½Îª0-basedï¿½ï¿½ï¿½ï¿½
                 }
             } catch (...) {
-                // ºöÂÔÎÞÐ§ÊäÈë
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½
             }
             
             pos = endPos;
         }
         
-        // Ö´ÐÐ·´Ó¦
+        // Ö´ï¿½Ð·ï¿½Ó¦
         system.performReaction(selectedIndices);
         
-        cout << "°´»Ø³µ¼ü¼ÌÐø..." << endl;
+        cout << "ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½..." << endl;
         cin.get();
     }
     

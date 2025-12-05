@@ -1,3 +1,5 @@
+ï»¿#pragma execution_character_set("utf-8")
+
 #include "Compound.h"
 #include "FormulaFormatter.h"
 #include <iostream>
@@ -13,17 +15,17 @@ Compound::Compound(const string& name, const string& formula,
     : name(name), formula(formula), molarMass(molarMass), state(state), description(description) {}
 
 void Compound::display() const {
-    cout << "\xE5\x90\x8D\xE7\xA7\xB0: " << name << endl;  // "Ãû³Æ: "
-    cout << "\xE5\x8C\x96\xE5\xAD\xA6\xE5\xBC\x8F: " << FormulaFormatter::formatFormula(formula) << endl;  // "»¯Ñ§Ê½: "
-    cout << "\xE6\x91\xA9\xE5\xB0\x94\xE8\xB4\xA8\xE9\x87\x8F: " << molarMass << " g/mol" << endl;  // "Ä¦¶ûÖÊÁ¿: "
-    cout << "\xE7\x8A\xB6\xE6\x80\x81: " << state << endl;  // "×´Ì¬: "
-    cout << "\xE6\x8F\x8F\xE8\xBF\xB0: " << description << endl;  // "ÃèÊö: "
+    cout << "åç§°: " << name << endl;
+    cout << "åŒ–å­¦å¼: " << FormulaFormatter::formatFormula(formula) << endl;
+    cout << "æ‘©å°”è´¨é‡: " << molarMass << " g/mol" << endl;
+    cout << "çŠ¶æ€: " << state << endl;
+    cout << "æè¿°: " << description << endl;
 }
 
 Compound Compound::loadFromFile(const string& filePath) {
     ifstream file(filePath);
     if (!file.is_open()) {
-        cerr << "\xE6\x97\xA0\xE6\xB3\x95\xE6\x89\x93\xE5\xBC\x80\xE6\x96\x87\xE4\xBB\xB6: " << filePath << endl;  // "ÎÞ·¨´ò¿ªÎÄ¼þ: "
+        cerr << "æ— æ³•æ‰“å¼€æ–‡ä»¶: " << filePath << endl;
         return Compound();
     }
     
@@ -31,27 +33,21 @@ Compound Compound::loadFromFile(const string& filePath) {
     double molarMass = 0.0;
     string line;
     
-    const string key_name = "\xE5\x90\x8D\xE7\xA7\xB0";  // "Ãû³Æ"
-    const string key_formula = "\xE5\x8C\x96\xE5\xAD\xA6\xE5\xBC\x8F";  // "»¯Ñ§Ê½"
-    const string key_molar = "\xE6\x91\xA9\xE5\xB0\x94\xE8\xB4\xA8\xE9\x87\x8F";  // "Ä¦¶ûÖÊÁ¿"
-    const string key_state = "\xE7\x8A\xB6\xE6\x80\x81";  // "×´Ì¬"
-    const string key_desc = "\xE6\x8F\x8F\xE8\xBF\xB0";  // "ÃèÊö"
-    
     while (getline(file, line)) {
         size_t colonPos = line.find(':');
         if (colonPos != string::npos) {
             string key = line.substr(0, colonPos);
             string value = line.substr(colonPos + 1);
             
-            if (key == key_name) {
+            if (key == "åç§°") {
                 name = value;
-            } else if (key == key_formula) {
+            } else if (key == "åŒ–å­¦å¼") {
                 formula = value;
-            } else if (key == key_molar) {
+            } else if (key == "æ‘©å°”è´¨é‡") {
                 molarMass = stod(value);
-            } else if (key == key_state) {
+            } else if (key == "çŠ¶æ€") {
                 state = value;
-            } else if (key == key_desc) {
+            } else if (key == "æè¿°") {
                 description = value;
             }
         }

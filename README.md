@@ -9,6 +9,7 @@
 - ? 用户可以自定义添加反应规则
 - ? 自动匹配反应并显示产物
 - ? 显示完整的反应方程式和反应条件
+- ? **化学式正确显示上下标** (H?O, CO?, CaCO?等)
 
 ## 项目结构
 
@@ -20,6 +21,7 @@ ElementReactions/
 │       ├── Compound.h/cpp          # 化合物类
 │       ├── Reaction.h/cpp          # 反应类
 │       ├── ReactionSystem.h/cpp    # 反应系统类
+│       ├── FormulaFormatter.h/cpp  # 化学式格式化工具
 │       └── resources/
 │           ├── compounds/          # 试剂库文件夹
 │           │   ├── TEMPLATE.md    # 化合物文件模板
@@ -33,7 +35,9 @@ ElementReactions/
 │               ├── TEMPLATE.md    # 反应文件模板
 │               ├── hydrogen_oxygen.txt      # 氢氧反应
 │               └── sodium_chlorine.txt      # 钠氯反应
-└── CMakeLists.txt                  # CMake配置文件
+├── CMakeLists.txt                  # CMake配置文件
+├── fix_encoding.ps1               # 编码修复脚本
+└── FORMULA_FORMATTING.md          # 化学式格式化说明
 ```
 
 ## 编译方法
@@ -50,7 +54,7 @@ cmake --build .
 ### 使用g++直接编译
 
 ```bash
-g++ -std=c++17 src/main/main.cpp src/main/Compound.cpp src/main/Reaction.cpp src/main/ReactionSystem.cpp -o ElementReactions
+g++ -std=c++17 src/main/main.cpp src/main/Compound.cpp src/main/Reaction.cpp src/main/ReactionSystem.cpp src/main/FormulaFormatter.cpp -o ElementReactions
 ```
 
 ## 使用方法
@@ -65,11 +69,11 @@ g++ -std=c++17 src/main/main.cpp src/main/Compound.cpp src/main/Reaction.cpp src
 
 ```
 ========== 试剂库 ==========
-[1] 氢气 (H2)
-[2] 氧气 (O2)
-[3] 水 (H2O)
+[1] 氢气 (H?)
+[2] 氧气 (O?)
+[3] 水 (H?O)
 [4] 钠 (Na)
-[5] 氯气 (Cl2)
+[5] 氯气 (Cl?)
 [6] 氯化钠 (NaCl)
 ===========================
 
@@ -78,20 +82,31 @@ g++ -std=c++17 src/main/main.cpp src/main/Compound.cpp src/main/Reaction.cpp src
 > 1 2
 
 ========== 反应物 ==========
-- 氢气 (H2)
-- 氧气 (O2)
+- 氢气 (H?)
+- 氧气 (O?)
 
 ========== 找到匹配的反应 ==========
 反应名称: 氢氧燃烧反应
-反应方程式: 2H2 + O2 —[点燃]→ 2H2O
+反应方程式: 2H? + O? —[点燃]→ 2H?O
 反应类型: 化合反应
 描述: 氢气在氧气中燃烧生成水
 
 ========== 产物 ==========
-- 2 × 水 (H2O)
+- 2 × 水 (H?O)
 
 反应成功！
 ```
+
+## 化学式上下标显示
+
+系统自动将化学式中的数字转换为下标显示：
+- H2 → H?
+- O2 → O?  
+- H2O → H?O
+- CaCO3 → CaCO?
+- Ca(OH)2 → Ca(OH)?
+
+详细说明请参考 [FORMULA_FORMATTING.md](FORMULA_FORMATTING.md)
 
 ## 添加新化合物
 
@@ -144,8 +159,8 @@ g++ -std=c++17 src/main/main.cpp src/main/Compound.cpp src/main/Reaction.cpp src
 
 ## 当前支持的反应
 
-- 氢气 + 氧气 → 水 (2H2 + O2 → 2H2O)
-- 钠 + 氯气 → 氯化钠 (2Na + Cl2 → 2NaCl)
+- 氢气 + 氧气 → 水 (2H? + O? → 2H?O)
+- 钠 + 氯气 → 氯化钠 (2Na + Cl? → 2NaCl)
 
 ## 技术特点
 
@@ -153,7 +168,22 @@ g++ -std=c++17 src/main/main.cpp src/main/Compound.cpp src/main/Reaction.cpp src
 - 面向对象设计
 - 文件驱动的配置系统
 - 动态反应匹配算法
+- Unicode下标显示化学式
 - 跨平台支持（Windows/Linux/macOS）
+
+## 开发注意事项
+
+### 中文编码问题
+
+源代码文件必须保存为 **UTF-8 with BOM** 格式才能正确编译。
+
+如遇到编译错误，运行以下命令修复编码：
+
+```bash
+powershell -ExecutionPolicy Bypass -File fix_encoding.ps1
+```
+
+详见 [FORMULA_FORMATTING.md](FORMULA_FORMATTING.md)
 
 ## 未来扩展
 
@@ -162,4 +192,5 @@ g++ -std=c++17 src/main/main.cpp src/main/Compound.cpp src/main/Reaction.cpp src
 - [ ] 支持反应条件判断（温度、压力等）
 - [ ] 支持多步反应
 - [ ] 添加反应热力学数据
+- [ ] 支持离子方程式（上标显示电荷）
 - [ ] 图形化界面

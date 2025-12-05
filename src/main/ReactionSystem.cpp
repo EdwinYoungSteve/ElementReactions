@@ -1,3 +1,5 @@
+ï»¿#pragma execution_character_set("utf-8")
+
 #include "ReactionSystem.h"
 #include "FormulaFormatter.h"
 #include <iostream>
@@ -14,7 +16,7 @@ void ReactionSystem::loadCompounds(const string& directoryPath) {
     
     try {
         if (!fs::exists(directoryPath)) {
-            cerr << "Ä¿Â¼²»´æÔÚ: " << directoryPath << endl;
+            cerr << "Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " << directoryPath << endl;
             return;
         }
         
@@ -27,9 +29,9 @@ void ReactionSystem::loadCompounds(const string& directoryPath) {
             }
         }
         
-        cout << "³É¹¦¼ÓÔØ " << compoundLibrary.size() << " ÖÖ»¯ºÏÎï" << endl;
+        cout << "ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ " << compoundLibrary.size() << " ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
     } catch (const exception& e) {
-        cerr << "¼ÓÔØ»¯ºÏÎïÊ±³ö´í: " << e.what() << endl;
+        cerr << "ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½: " << e.what() << endl;
     }
 }
 
@@ -38,7 +40,7 @@ void ReactionSystem::loadReactions(const string& directoryPath) {
     
     try {
         if (!fs::exists(directoryPath)) {
-            cerr << "Ä¿Â¼²»´æÔÚ: " << directoryPath << endl;
+            cerr << "Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " << directoryPath << endl;
             return;
         }
         
@@ -51,14 +53,14 @@ void ReactionSystem::loadReactions(const string& directoryPath) {
             }
         }
         
-        cout << "³É¹¦¼ÓÔØ " << reactionLibrary.size() << " ¸ö·´Ó¦¹æÔò" << endl;
+        cout << "ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ " << reactionLibrary.size() << " ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½" << endl;
     } catch (const exception& e) {
-        cerr << "¼ÓÔØ·´Ó¦Ê±³ö´í: " << e.what() << endl;
+        cerr << "ï¿½ï¿½ï¿½Ø·ï¿½Ó¦Ê±ï¿½ï¿½ï¿½ï¿½: " << e.what() << endl;
     }
 }
 
 void ReactionSystem::displayLibrary() const {
-    cout << "\n========== ÊÔ¼Á¿â ==========" << endl;
+    cout << "\n========== ï¿½Ô¼ï¿½ï¿½ï¿½ ==========" << endl;
     for (size_t i = 0; i < compoundLibrary.size(); i++) {
         cout << "[" << i + 1 << "] " << compoundLibrary[i].getName() 
              << " (" << FormulaFormatter::formatFormula(compoundLibrary[i].getFormula()) << ")" << endl;
@@ -68,11 +70,11 @@ void ReactionSystem::displayLibrary() const {
 
 void ReactionSystem::performReaction(const vector<int>& selectedIndices) {
     if (selectedIndices.empty()) {
-        cout << "Î´Ñ¡ÔñÈÎºÎÊÔ¼Á£¡" << endl;
+        cout << "Î´Ñ¡ï¿½ï¿½ï¿½Îºï¿½ï¿½Ô¼ï¿½ï¿½ï¿½" << endl;
         return;
     }
     
-    cout << "\n========== ·´Ó¦Îï ==========" << endl;
+    cout << "\n========== ï¿½ï¿½Ó¦ï¿½ï¿½ ==========" << endl;
     vector<string> selectedFormulas;
     for (int idx : selectedIndices) {
         cout << "- " << compoundLibrary[idx].getName() 
@@ -80,24 +82,24 @@ void ReactionSystem::performReaction(const vector<int>& selectedIndices) {
         selectedFormulas.push_back(compoundLibrary[idx].getFormula());
     }
     
-    // ÔÚ·´Ó¦¿âÖÐ²éÕÒÆ¥ÅäµÄ·´Ó¦
+    // ï¿½Ú·ï¿½Ó¦ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½Ä·ï¿½Ó¦
     bool reactionFound = false;
     for (const auto& reaction : reactionLibrary) {
         if (reaction.matchReactants(selectedFormulas)) {
             reactionFound = true;
             
-            cout << "\n========== ÕÒµ½Æ¥ÅäµÄ·´Ó¦ ==========" << endl;
+            cout << "\n========== ï¿½Òµï¿½Æ¥ï¿½ï¿½Ä·ï¿½Ó¦ ==========" << endl;
             reaction.display();
             
-            cout << "\n========== ²úÎï ==========" << endl;
-            // ÏÔÊ¾²úÎï
+            cout << "\n========== ï¿½ï¿½ï¿½ï¿½ ==========" << endl;
+            // ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
             for (const auto& product : reaction.getProducts()) {
-                // ÔÚ»¯ºÏÎï¿âÖÐ²éÕÒ²úÎï
+                // ï¿½Ú»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½Ò²ï¿½ï¿½ï¿½
                 for (const auto& compound : compoundLibrary) {
                     if (compound.getFormula() == product.formula) {
                         cout << "- ";
                         if (product.stoichiometry > 1) {
-                            cout << product.stoichiometry << " ¡Á ";
+                            cout << product.stoichiometry << " ï¿½ï¿½ ";
                         }
                         cout << compound.getName() 
                              << " (" << FormulaFormatter::formatFormula(compound.getFormula()) << ")" << endl;
@@ -106,17 +108,17 @@ void ReactionSystem::performReaction(const vector<int>& selectedIndices) {
                 }
             }
             
-            cout << "\n·´Ó¦³É¹¦£¡" << endl;
+            cout << "\nï¿½ï¿½Ó¦ï¿½É¹ï¿½ï¿½ï¿½" << endl;
             break;
         }
     }
     
     if (!reactionFound) {
-        cout << "\nÃ»ÓÐ¼ì²âµ½¿ÉÒÔ·¢ÉúµÄ·´Ó¦¡£" << endl;
-        cout << "µ±Ç°·´Ó¦¿âÖÐ¹²ÓÐ " << reactionLibrary.size() << " ¸ö·´Ó¦¹æÔò¡£" << endl;
+        cout << "\nÃ»ï¿½Ð¼ï¿½âµ½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ä·ï¿½Ó¦ï¿½ï¿½" << endl;
+        cout << "ï¿½ï¿½Ç°ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½ " << reactionLibrary.size() << " ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½" << endl;
         
         if (!reactionLibrary.empty()) {
-            cout << "\n¿ÉÓÃµÄ·´Ó¦ÓÐ£º" << endl;
+            cout << "\nï¿½ï¿½ï¿½ÃµÄ·ï¿½Ó¦ï¿½Ð£ï¿½" << endl;
             for (const auto& reaction : reactionLibrary) {
                 cout << "  - " << reaction.getName() << ": " 
                      << reaction.getEquationString() << endl;
