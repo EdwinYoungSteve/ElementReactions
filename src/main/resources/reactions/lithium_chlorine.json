@@ -1,0 +1,12 @@
+{
+  "name": "Lithium and Chlorine Reaction",
+  "equation": "2Li + Cl2 = 2LiCl",
+  "conditions": "heating",
+  "reactants": {
+    "Li": 2,
+    "Cl2": 1
+  },
+  "products": {
+    "LiCl": 2
+  }
+}

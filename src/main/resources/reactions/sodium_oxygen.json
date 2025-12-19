@@ -1,0 +1,12 @@
+{
+  "name": "Sodium and Oxygen Reaction",
+  "equation": "4Na + O2 = 2Na2O",
+  "conditions": "heating",
+  "reactants": {
+    "Na": 4,
+    "O2": 1
+  },
+  "products": {
+    "Na2O": 2
+  }
+}

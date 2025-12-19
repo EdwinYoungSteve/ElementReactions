@@ -1,0 +1,10 @@
+{
+  "name": "Sulfurous Acid",
+  "formula": "H2SO3",
+  "state": "aqueous",
+  "elements": {
+    "H": 2,
+    "S": 1,
+    "O": 3
+  }
+}

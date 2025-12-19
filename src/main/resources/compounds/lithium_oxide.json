@@ -1,0 +1,9 @@
+{
+  "name": "Lithium Oxide",
+  "formula": "Li2O",
+  "state": "solid",
+  "elements": {
+    "Li": 2,
+    "O": 1
+  }
+}

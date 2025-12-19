@@ -1,0 +1,13 @@
+{
+  "name": "Chlorine Dioxide Disproportionation",
+  "equation": "2ClO2 + H2O = HClO2 + HClO3",
+  "conditions": "room temperature",
+  "reactants": {
+    "ClO2": 2,
+    "H2O": 1
+  },
+  "products": {
+    "HClO2": 1,
+    "HClO3": 1
+  }
+}

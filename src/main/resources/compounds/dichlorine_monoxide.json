@@ -1,0 +1,9 @@
+{
+  "name": "Dichlorine Monoxide",
+  "formula": "Cl2O",
+  "state": "gas",
+  "elements": {
+    "Cl": 2,
+    "O": 1
+  }
+}

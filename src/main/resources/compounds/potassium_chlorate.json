@@ -1,0 +1,10 @@
+{
+  "name": "Potassium Chlorate",
+  "formula": "KClO3",
+  "state": "solid",
+  "elements": {
+    "K": 1,
+    "O": 3,
+    "Cl": 1
+  }
+}

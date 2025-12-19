@@ -1,0 +1,11 @@
+{
+  "name": "Sodium Beryllate",
+  "formula": "Na2Be(OH)4",
+  "state": "aqueous",
+  "elements": {
+    "Na": 2,
+    "Be": 1,
+    "O": 4,
+    "H": 4
+  }
+}

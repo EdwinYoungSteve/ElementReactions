@@ -1,0 +1,13 @@
+{
+  "name": "Hydrogen and Perchloric Acid Reaction",
+  "equation": "4H2 + HClO4 = HCl + 4H2O",
+  "conditions": "catalyst and heating",
+  "reactants": {
+    "H2": 4,
+    "HClO4": 1
+  },
+  "products": {
+    "HCl": 1,
+    "H2O": 4
+  }
+}

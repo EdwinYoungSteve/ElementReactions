@@ -1,0 +1,10 @@
+{
+  "name": "Perchloric Acid",
+  "formula": "HClO4",
+  "state": "liquid",
+  "elements": {
+    "H": 1,
+    "Cl": 1,
+    "O": 4
+  }
+}

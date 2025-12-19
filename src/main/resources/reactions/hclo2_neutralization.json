@@ -1,0 +1,13 @@
+{
+  "name": "Chlorous Acid Neutralization",
+  "equation": "HClO2 + NaOH = NaClO2 + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "HClO2": 1,
+    "NaOH": 1
+  },
+  "products": {
+    "NaClO2": 1,
+    "H2O": 1
+  }
+}

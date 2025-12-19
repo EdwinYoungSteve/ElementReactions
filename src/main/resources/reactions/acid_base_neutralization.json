@@ -1,0 +1,13 @@
+{
+  "name": "Acid-Base Neutralization",
+  "equation": "HCl + NaOH = NaCl + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "HCl": 1,
+    "NaOH": 1
+  },
+  "products": {
+    "NaCl": 1,
+    "H2O": 1
+  }
+}

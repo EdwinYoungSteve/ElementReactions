@@ -1,0 +1,10 @@
+{
+  "name": "Boric Acid",
+  "formula": "H3BO3",
+  "state": "solid",
+  "elements": {
+    "H": 3,
+    "B": 1,
+    "O": 3
+  }
+}

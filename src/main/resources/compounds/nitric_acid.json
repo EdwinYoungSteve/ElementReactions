@@ -1,0 +1,10 @@
+{
+  "name": "Nitric Acid",
+  "formula": "HNO3",
+  "state": "liquid",
+  "elements": {
+    "H": 1,
+    "N": 1,
+    "O": 3
+  }
+}

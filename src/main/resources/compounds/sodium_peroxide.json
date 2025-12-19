@@ -1,0 +1,9 @@
+{
+  "name": "Sodium Peroxide",
+  "formula": "Na2O2",
+  "state": "solid",
+  "elements": {
+    "Na": 2,
+    "O": 2
+  }
+}

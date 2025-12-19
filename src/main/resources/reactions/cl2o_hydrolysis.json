@@ -1,0 +1,12 @@
+{
+  "name": "Dichlorine Monoxide Hydrolysis",
+  "equation": "Cl2O + H2O = 2HClO",
+  "conditions": "room temperature",
+  "reactants": {
+    "Cl2O": 1,
+    "H2O": 1
+  },
+  "products": {
+    "HClO": 2
+  }
+}

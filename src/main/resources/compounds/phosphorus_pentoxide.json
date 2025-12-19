@@ -1,0 +1,9 @@
+{
+  "name": "Phosphorus Pentoxide",
+  "formula": "P2O5",
+  "state": "solid",
+  "elements": {
+    "P": 2,
+    "O": 5
+  }
+}

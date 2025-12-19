@@ -1,0 +1,13 @@
+{
+  "name": "Sodium and Chlorine Oxide Reaction",
+  "equation": "2Na + Cl2O = 2NaCl + Na2O",
+  "conditions": "heating",
+  "reactants": {
+    "Na": 2,
+    "Cl2O": 1
+  },
+  "products": {
+    "NaCl": 2,
+    "Na2O": 1
+  }
+}

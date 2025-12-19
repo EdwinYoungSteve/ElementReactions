@@ -1,0 +1,13 @@
+{
+  "name": "Hydrogen Sulfide Combustion",
+  "equation": "2H2S + 3O2 = 2SO2 + 2H2O",
+  "conditions": "heating",
+  "reactants": {
+    "H2S": 2,
+    "O2": 3
+  },
+  "products": {
+    "SO2": 2,
+    "H2O": 2
+  }
+}

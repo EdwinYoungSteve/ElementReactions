@@ -1,0 +1,12 @@
+{
+  "name": "Nitric Oxide Oxidation",
+  "equation": "2NO + O2 = 2NO2",
+  "conditions": "room temperature",
+  "reactants": {
+    "NO": 2,
+    "O2": 1
+  },
+  "products": {
+    "NO2": 2
+  }
+}

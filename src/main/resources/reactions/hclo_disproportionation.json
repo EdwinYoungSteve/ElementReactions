@@ -1,0 +1,12 @@
+{
+  "name": "Hypochlorous Acid Disproportionation",
+  "equation": "3HClO = HClO3 + 2HCl",
+  "conditions": "room temperature",
+  "reactants": {
+    "HClO": 3
+  },
+  "products": {
+    "HClO3": 1,
+    "HCl": 2
+  }
+}

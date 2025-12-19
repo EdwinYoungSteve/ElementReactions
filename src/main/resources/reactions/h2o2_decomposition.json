@@ -1,0 +1,12 @@
+{
+  "name": "Hydrogen Peroxide Decomposition",
+  "equation": "2H2O2 = 2H2O + O2",
+  "conditions": "catalyst or light",
+  "reactants": {
+    "H2O2": 2
+  },
+  "products": {
+    "H2O": 2,
+    "O2": 1
+  }
+}

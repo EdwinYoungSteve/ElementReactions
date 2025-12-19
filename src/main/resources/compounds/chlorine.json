@@ -1,0 +1,8 @@
+{
+  "name": "Chlorine",
+  "formula": "Cl2",
+  "state": "gas",
+  "elements": {
+    "Cl": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Sodium Hydroxide",
+  "formula": "NaOH",
+  "state": "solid",
+  "elements": {
+    "Na": 1,
+    "O": 1,
+    "H": 1
+  }
+}

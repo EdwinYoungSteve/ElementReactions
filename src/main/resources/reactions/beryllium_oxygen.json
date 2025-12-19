@@ -1,0 +1,12 @@
+{
+  "name": "Beryllium and Oxygen Reaction",
+  "equation": "2Be + O2 = 2BeO",
+  "conditions": "heating",
+  "reactants": {
+    "Be": 2,
+    "O2": 1
+  },
+  "products": {
+    "BeO": 2
+  }
+}

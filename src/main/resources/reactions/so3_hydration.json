@@ -1,0 +1,12 @@
+{
+  "name": "Sulfur Trioxide Hydration",
+  "equation": "SO3 + H2O = H2SO4",
+  "conditions": "room temperature",
+  "reactants": {
+    "SO3": 1,
+    "H2O": 1
+  },
+  "products": {
+    "H2SO4": 1
+  }
+}

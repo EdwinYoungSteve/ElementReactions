@@ -1,0 +1,12 @@
+{
+  "name": "Carbon Monoxide Combustion",
+  "equation": "2CO + O2 = 2CO2",
+  "conditions": "heating",
+  "reactants": {
+    "CO": 2,
+    "O2": 1
+  },
+  "products": {
+    "CO2": 2
+  }
+}

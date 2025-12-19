@@ -1,0 +1,9 @@
+{
+  "name": "Water",
+  "formula": "H2O",
+  "state": "liquid",
+  "elements": {
+    "H": 2,
+    "O": 1
+  }
+}

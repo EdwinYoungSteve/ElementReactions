@@ -1,0 +1,13 @@
+{
+  "name": "Phosphoric Acid and NaOH Neutralization",
+  "equation": "H3PO4 + 3NaOH = Na3PO4 + 3H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "H3PO4": 1,
+    "NaOH": 3
+  },
+  "products": {
+    "Na3PO4": 1,
+    "H2O": 3
+  }
+}

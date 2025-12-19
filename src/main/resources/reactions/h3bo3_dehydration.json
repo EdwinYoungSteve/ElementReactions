@@ -1,0 +1,12 @@
+{
+  "name": "Boric Acid Dehydration",
+  "equation": "2H3BO3 = B2O3 + 3H2O",
+  "conditions": "strong heating",
+  "reactants": {
+    "H3BO3": 2
+  },
+  "products": {
+    "B2O3": 1,
+    "H2O": 3
+  }
+}

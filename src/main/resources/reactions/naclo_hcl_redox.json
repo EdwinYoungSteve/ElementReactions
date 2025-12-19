@@ -1,0 +1,14 @@
+{
+  "name": "Sodium Hypochlorite and HCl Reaction",
+  "equation": "NaClO + 2HCl = NaCl + Cl2 + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "NaClO": 1,
+    "HCl": 2
+  },
+  "products": {
+    "NaCl": 1,
+    "Cl2": 1,
+    "H2O": 1
+  }
+}

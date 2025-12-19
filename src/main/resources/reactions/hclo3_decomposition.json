@@ -1,0 +1,12 @@
+{
+  "name": "Chloric Acid Decomposition",
+  "equation": "4HClO3 = 3HClO4 + HCl",
+  "conditions": "heating",
+  "reactants": {
+    "HClO3": 4
+  },
+  "products": {
+    "HClO4": 3,
+    "HCl": 1
+  }
+}

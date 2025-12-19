@@ -1,0 +1,14 @@
+{
+  "name": "Sodium Chlorate and HCl Reaction",
+  "equation": "NaClO3 + 6HCl = NaCl + 3Cl2 + 3H2O",
+  "conditions": "heating",
+  "reactants": {
+    "NaClO3": 1,
+    "HCl": 6
+  },
+  "products": {
+    "NaCl": 1,
+    "Cl2": 3,
+    "H2O": 3
+  }
+}

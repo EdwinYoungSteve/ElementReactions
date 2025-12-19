@@ -1,0 +1,9 @@
+{
+  "name": "Ammonia",
+  "formula": "NH3",
+  "state": "gas",
+  "elements": {
+    "N": 1,
+    "H": 3
+  }
+}

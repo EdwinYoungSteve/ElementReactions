@@ -1,0 +1,13 @@
+{
+  "name": "Carbon Dioxide and Sodium Peroxide Reaction",
+  "equation": "2CO2 + 2Na2O2 = 2Na2CO3 + O2",
+  "conditions": "room temperature",
+  "reactants": {
+    "CO2": 2,
+    "Na2O2": 2
+  },
+  "products": {
+    "Na2CO3": 2,
+    "O2": 1
+  }
+}

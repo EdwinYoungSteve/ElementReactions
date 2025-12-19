@@ -1,0 +1,10 @@
+{
+  "name": "Sodium Sulfate",
+  "formula": "Na2SO4",
+  "state": "solid",
+  "elements": {
+    "Na": 2,
+    "S": 1,
+    "O": 4
+  }
+}

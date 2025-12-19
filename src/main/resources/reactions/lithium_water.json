@@ -1,0 +1,13 @@
+{
+  "name": "Lithium and Water Reaction",
+  "equation": "2Li + 2H2O = 2LiOH + H2",
+  "conditions": "room temperature",
+  "reactants": {
+    "Li": 2,
+    "H2O": 2
+  },
+  "products": {
+    "LiOH": 2,
+    "H2": 1
+  }
+}

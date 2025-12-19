@@ -1,0 +1,12 @@
+{
+  "name": "Sodium Oxide Hydrolysis",
+  "equation": "Na2O + H2O = 2NaOH",
+  "conditions": "room temperature",
+  "reactants": {
+    "Na2O": 1,
+    "H2O": 1
+  },
+  "products": {
+    "NaOH": 2
+  }
+}

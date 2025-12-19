@@ -1,0 +1,12 @@
+{
+  "name": "Carbon Combustion (Limited Oxygen)",
+  "equation": "2C + O2 = 2CO",
+  "conditions": "limited oxygen, heating",
+  "reactants": {
+    "C": 2,
+    "O2": 1
+  },
+  "products": {
+    "CO": 2
+  }
+}

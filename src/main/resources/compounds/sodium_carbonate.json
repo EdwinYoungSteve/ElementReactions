@@ -1,0 +1,10 @@
+{
+  "name": "Sodium Carbonate",
+  "formula": "Na2CO3",
+  "state": "solid",
+  "elements": {
+    "Na": 2,
+    "C": 1,
+    "O": 3
+  }
+}

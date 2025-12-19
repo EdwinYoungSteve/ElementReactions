@@ -1,0 +1,14 @@
+{
+  "name": "Chlorine Disproportionation in Base",
+  "equation": "Cl2 + 2NaOH = NaCl + NaClO + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "Cl2": 1,
+    "NaOH": 2
+  },
+  "products": {
+    "NaCl": 1,
+    "NaClO": 1,
+    "H2O": 1
+  }
+}

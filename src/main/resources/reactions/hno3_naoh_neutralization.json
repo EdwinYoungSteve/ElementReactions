@@ -1,0 +1,13 @@
+{
+  "name": "Nitric Acid and NaOH Neutralization",
+  "equation": "HNO3 + NaOH = NaNO3 + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "HNO3": 1,
+    "NaOH": 1
+  },
+  "products": {
+    "NaNO3": 1,
+    "H2O": 1
+  }
+}

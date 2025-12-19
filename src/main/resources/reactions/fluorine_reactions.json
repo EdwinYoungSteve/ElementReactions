@@ -1,0 +1,12 @@
+{
+  "name": "Fluorine with Hydrogen",
+  "equation": "H2 + F2 = 2HF",
+  "conditions": "ignition",
+  "reactants": {
+    "H2": 1,
+    "F2": 1
+  },
+  "products": {
+    "HF": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Sodium Chloride",
+  "formula": "NaCl",
+  "state": "solid",
+  "elements": {
+    "Na": 1,
+    "Cl": 1
+  }
+}

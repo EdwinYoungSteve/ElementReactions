@@ -1,0 +1,9 @@
+{
+  "name": "Nitrogen Dioxide",
+  "formula": "NO2",
+  "state": "gas",
+  "elements": {
+    "N": 1,
+    "O": 2
+  }
+}

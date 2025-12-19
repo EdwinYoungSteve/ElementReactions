@@ -1,0 +1,13 @@
+{
+  "name": "Sulfuric Acid and NaOH Neutralization",
+  "equation": "H2SO4 + 2NaOH = Na2SO4 + 2H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "H2SO4": 1,
+    "NaOH": 2
+  },
+  "products": {
+    "Na2SO4": 1,
+    "H2O": 2
+  }
+}

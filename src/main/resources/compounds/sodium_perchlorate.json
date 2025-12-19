@@ -1,0 +1,10 @@
+{
+  "name": "Sodium Perchlorate",
+  "formula": "NaClO4",
+  "state": "solid",
+  "elements": {
+    "Na": 1,
+    "Cl": 1,
+    "O": 4
+  }
+}

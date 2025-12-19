@@ -1,0 +1,10 @@
+{
+  "name": "Beryllium Hydroxide",
+  "formula": "Be(OH)2",
+  "state": "solid",
+  "elements": {
+    "Be": 1,
+    "O": 2,
+    "H": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Aluminum Oxide",
+  "formula": "Al2O3",
+  "state": "solid",
+  "elements": {
+    "Al": 2,
+    "O": 3
+  }
+}

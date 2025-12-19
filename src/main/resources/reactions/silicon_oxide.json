@@ -1,0 +1,12 @@
+{
+  "name": "Silicon Combustion",
+  "equation": "Si + O2 = SiO2",
+  "conditions": "heating",
+  "reactants": {
+    "Si": 1,
+    "O2": 1
+  },
+  "products": {
+    "SiO2": 1
+  }
+}

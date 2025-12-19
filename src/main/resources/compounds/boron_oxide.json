@@ -1,0 +1,9 @@
+{
+  "name": "Boron Oxide",
+  "formula": "B2O3",
+  "state": "solid",
+  "elements": {
+    "B": 2,
+    "O": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Hydrogen Sulfide",
+  "formula": "H2S",
+  "state": "gas",
+  "elements": {
+    "H": 2,
+    "S": 1
+  }
+}

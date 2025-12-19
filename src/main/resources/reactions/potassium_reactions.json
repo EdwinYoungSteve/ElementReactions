@@ -1,0 +1,13 @@
+{
+  "name": "Potassium and Water",
+  "equation": "2K + 2H2O = 2KOH + H2",
+  "conditions": "room temperature",
+  "reactants": {
+    "K": 2,
+    "H2O": 2
+  },
+  "products": {
+    "KOH": 2,
+    "H2": 1
+  }
+}

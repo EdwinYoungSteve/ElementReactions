@@ -1,0 +1,12 @@
+{
+  "name": "Beryllium and Chlorine Reaction",
+  "equation": "Be + Cl2 = BeCl2",
+  "conditions": "heating",
+  "reactants": {
+    "Be": 1,
+    "Cl2": 1
+  },
+  "products": {
+    "BeCl2": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Beryllium Chloride",
+  "formula": "BeCl2",
+  "state": "solid",
+  "elements": {
+    "Be": 1,
+    "Cl": 2
+  }
+}

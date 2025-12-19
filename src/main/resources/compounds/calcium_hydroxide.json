@@ -1,0 +1,10 @@
+{
+  "name": "Calcium Hydroxide",
+  "formula": "Ca(OH)2",
+  "state": "solid",
+  "elements": {
+    "Ca": 1,
+    "O": 2,
+    "H": 2
+  }
+}

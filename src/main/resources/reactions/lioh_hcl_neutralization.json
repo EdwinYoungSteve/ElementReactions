@@ -1,0 +1,13 @@
+{
+  "name": "Lithium Hydroxide and HCl Reaction",
+  "equation": "LiOH + HCl = LiCl + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "LiOH": 1,
+    "HCl": 1
+  },
+  "products": {
+    "LiCl": 1,
+    "H2O": 1
+  }
+}

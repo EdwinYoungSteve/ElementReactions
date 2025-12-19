@@ -1,0 +1,9 @@
+{
+  "name": "Magnesium Chloride",
+  "formula": "MgCl2",
+  "state": "solid",
+  "elements": {
+    "Mg": 1,
+    "Cl": 2
+  }
+}

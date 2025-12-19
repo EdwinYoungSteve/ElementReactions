@@ -1,0 +1,12 @@
+{
+  "name": "Sulfur Dioxide Oxidation",
+  "equation": "2SO2 + O2 = 2SO3",
+  "conditions": "catalyst, heating",
+  "reactants": {
+    "SO2": 2,
+    "O2": 1
+  },
+  "products": {
+    "SO3": 2
+  }
+}

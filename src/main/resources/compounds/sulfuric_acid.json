@@ -1,0 +1,10 @@
+{
+  "name": "Sulfuric Acid",
+  "formula": "H2SO4",
+  "state": "liquid",
+  "elements": {
+    "H": 2,
+    "S": 1,
+    "O": 4
+  }
+}

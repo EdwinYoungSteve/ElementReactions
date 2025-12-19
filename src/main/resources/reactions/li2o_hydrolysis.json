@@ -1,0 +1,12 @@
+{
+  "name": "Lithium Oxide Hydrolysis",
+  "equation": "Li2O + H2O = 2LiOH",
+  "conditions": "room temperature",
+  "reactants": {
+    "Li2O": 1,
+    "H2O": 1
+  },
+  "products": {
+    "LiOH": 2
+  }
+}

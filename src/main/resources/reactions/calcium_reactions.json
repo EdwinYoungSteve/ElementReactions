@@ -1,0 +1,13 @@
+{
+  "name": "Calcium and Water",
+  "equation": "Ca + 2H2O = Ca(OH)2 + H2",
+  "conditions": "room temperature",
+  "reactants": {
+    "Ca": 1,
+    "H2O": 2
+  },
+  "products": {
+    "Ca(OH)2": 1,
+    "H2": 1
+  }
+}

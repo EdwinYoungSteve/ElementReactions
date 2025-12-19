@@ -1,0 +1,12 @@
+{
+  "name": "Sodium Chlorate Decomposition",
+  "equation": "4NaClO3 = 3NaClO4 + NaCl",
+  "conditions": "heating",
+  "reactants": {
+    "NaClO3": 4
+  },
+  "products": {
+    "NaClO4": 3,
+    "NaCl": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Hydrogen Peroxide and HCl Reaction",
+  "equation": "H2O2 + 2HCl = Cl2 + 2H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "H2O2": 1,
+    "HCl": 2
+  },
+  "products": {
+    "Cl2": 1,
+    "H2O": 2
+  }
+}

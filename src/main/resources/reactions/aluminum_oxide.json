@@ -1,0 +1,12 @@
+{
+  "name": "Aluminum and Oxygen",
+  "equation": "4Al + 3O2 = 2Al2O3",
+  "conditions": "heating",
+  "reactants": {
+    "Al": 4,
+    "O2": 3
+  },
+  "products": {
+    "Al2O3": 2
+  }
+}

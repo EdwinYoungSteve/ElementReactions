@@ -1,0 +1,9 @@
+{
+  "name": "Potassium Chloride",
+  "formula": "KCl",
+  "state": "solid",
+  "elements": {
+    "K": 1,
+    "Cl": 1
+  }
+}

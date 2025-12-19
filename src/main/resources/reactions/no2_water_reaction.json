@@ -1,0 +1,13 @@
+{
+  "name": "Nitrogen Dioxide and Water Reaction",
+  "equation": "3NO2 + H2O = 2HNO3 + NO",
+  "conditions": "room temperature",
+  "reactants": {
+    "NO2": 3,
+    "H2O": 1
+  },
+  "products": {
+    "HNO3": 2,
+    "NO": 1
+  }
+}

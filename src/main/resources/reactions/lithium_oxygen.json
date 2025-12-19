@@ -1,0 +1,12 @@
+{
+  "name": "Lithium and Oxygen Reaction",
+  "equation": "4Li + O2 = 2Li2O",
+  "conditions": "heating",
+  "reactants": {
+    "Li": 4,
+    "O2": 1
+  },
+  "products": {
+    "Li2O": 2
+  }
+}

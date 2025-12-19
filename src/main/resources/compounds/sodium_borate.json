@@ -1,0 +1,10 @@
+{
+  "name": "Sodium Borate",
+  "formula": "Na2B4O7",
+  "state": "solid",
+  "elements": {
+    "Na": 2,
+    "B": 4,
+    "O": 7
+  }
+}

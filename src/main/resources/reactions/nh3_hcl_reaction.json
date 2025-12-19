@@ -1,0 +1,12 @@
+{
+  "name": "Ammonia and HCl Reaction",
+  "equation": "NH3 + HCl = NH4Cl",
+  "conditions": "room temperature",
+  "reactants": {
+    "NH3": 1,
+    "HCl": 1
+  },
+  "products": {
+    "NH4Cl": 1
+  }
+}

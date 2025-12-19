@@ -1,0 +1,8 @@
+{
+  "name": "Silicon",
+  "formula": "Si",
+  "state": "solid",
+  "elements": {
+    "Si": 1
+  }
+}

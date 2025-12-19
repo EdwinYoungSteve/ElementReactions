@@ -1,0 +1,14 @@
+{
+  "name": "Sodium Carbonate and HCl Reaction",
+  "equation": "Na2CO3 + 2HCl = 2NaCl + H2O + CO2",
+  "conditions": "room temperature",
+  "reactants": {
+    "Na2CO3": 1,
+    "HCl": 2
+  },
+  "products": {
+    "NaCl": 2,
+    "H2O": 1,
+    "CO2": 1
+  }
+}

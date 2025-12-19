@@ -1,0 +1,8 @@
+{
+  "name": "Hydrogen",
+  "formula": "H2",
+  "state": "gas",
+  "elements": {
+    "H": 2
+  }
+}

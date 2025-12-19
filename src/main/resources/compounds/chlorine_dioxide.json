@@ -1,0 +1,9 @@
+{
+  "name": "Chlorine Dioxide",
+  "formula": "ClO2",
+  "state": "gas",
+  "elements": {
+    "Cl": 1,
+    "O": 2
+  }
+}

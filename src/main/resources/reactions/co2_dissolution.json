@@ -1,0 +1,12 @@
+{
+  "name": "Carbon Dioxide Dissolution",
+  "equation": "CO2 + H2O = H2CO3",
+  "conditions": "room temperature",
+  "reactants": {
+    "CO2": 1,
+    "H2O": 1
+  },
+  "products": {
+    "H2CO3": 1
+  }
+}

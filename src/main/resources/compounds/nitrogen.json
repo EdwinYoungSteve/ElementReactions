@@ -1,0 +1,8 @@
+{
+  "name": "Nitrogen",
+  "formula": "N2",
+  "state": "gas",
+  "elements": {
+    "N": 2
+  }
+}

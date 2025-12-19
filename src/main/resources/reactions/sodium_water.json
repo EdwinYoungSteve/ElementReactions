@@ -1,0 +1,13 @@
+{
+  "name": "Sodium and Water Reaction",
+  "equation": "2Na + 2H2O = 2NaOH + H2",
+  "conditions": "room temperature",
+  "reactants": {
+    "Na": 2,
+    "H2O": 2
+  },
+  "products": {
+    "NaOH": 2,
+    "H2": 1
+  }
+}

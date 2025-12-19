@@ -1,0 +1,9 @@
+{
+  "name": "Nitric Oxide",
+  "formula": "NO",
+  "state": "gas",
+  "elements": {
+    "N": 1,
+    "O": 1
+  }
+}

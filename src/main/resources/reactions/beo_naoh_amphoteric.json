@@ -1,0 +1,13 @@
+{
+  "name": "Beryllium Oxide Amphoteric Reaction with Base",
+  "equation": "BeO + 2NaOH + H2O = Na2Be(OH)4",
+  "conditions": "heating",
+  "reactants": {
+    "BeO": 1,
+    "NaOH": 2,
+    "H2O": 1
+  },
+  "products": {
+    "Na2Be(OH)4": 1
+  }
+}

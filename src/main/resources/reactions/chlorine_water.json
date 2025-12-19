@@ -1,0 +1,13 @@
+{
+  "name": "Chlorine and Water Reaction",
+  "equation": "Cl2 + H2O = HCl + HClO",
+  "conditions": "room temperature",
+  "reactants": {
+    "Cl2": 1,
+    "H2O": 1
+  },
+  "products": {
+    "HCl": 1,
+    "HClO": 1
+  }
+}

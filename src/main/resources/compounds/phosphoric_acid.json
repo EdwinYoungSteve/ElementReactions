@@ -1,0 +1,10 @@
+{
+  "name": "Phosphoric Acid",
+  "formula": "H3PO4",
+  "state": "liquid",
+  "elements": {
+    "H": 3,
+    "P": 1,
+    "O": 4
+  }
+}

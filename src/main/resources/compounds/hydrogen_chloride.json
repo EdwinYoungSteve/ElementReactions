@@ -1,0 +1,9 @@
+{
+  "name": "Hydrogen Chloride",
+  "formula": "HCl",
+  "state": "gas",
+  "elements": {
+    "H": 1,
+    "Cl": 1
+  }
+}

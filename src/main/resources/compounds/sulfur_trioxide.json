@@ -1,0 +1,9 @@
+{
+  "name": "Sulfur Trioxide",
+  "formula": "SO3",
+  "state": "gas",
+  "elements": {
+    "S": 1,
+    "O": 3
+  }
+}

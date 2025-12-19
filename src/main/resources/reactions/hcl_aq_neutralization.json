@@ -1,0 +1,13 @@
+{
+  "name": "Hydrochloric Acid Neutralization",
+  "equation": "HCl(aq) + NaOH = NaCl + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "HCl(aq)": 1,
+    "NaOH": 1
+  },
+  "products": {
+    "NaCl": 1,
+    "H2O": 1
+  }
+}

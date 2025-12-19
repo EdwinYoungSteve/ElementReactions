@@ -1,0 +1,12 @@
+{
+  "name": "Dichlorine Heptoxide Hydrolysis",
+  "equation": "Cl2O7 + H2O = 2HClO4",
+  "conditions": "room temperature",
+  "reactants": {
+    "Cl2O7": 1,
+    "H2O": 1
+  },
+  "products": {
+    "HClO4": 2
+  }
+}

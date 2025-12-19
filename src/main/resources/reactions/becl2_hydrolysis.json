@@ -1,0 +1,13 @@
+{
+  "name": "Beryllium Chloride Hydrolysis",
+  "equation": "BeCl2 + 2H2O = Be(OH)2 + 2HCl",
+  "conditions": "room temperature",
+  "reactants": {
+    "BeCl2": 1,
+    "H2O": 2
+  },
+  "products": {
+    "Be(OH)2": 1,
+    "HCl": 2
+  }
+}

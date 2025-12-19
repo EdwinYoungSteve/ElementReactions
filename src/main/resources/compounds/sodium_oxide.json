@@ -1,0 +1,9 @@
+{
+  "name": "Sodium Oxide",
+  "formula": "Na2O",
+  "state": "solid",
+  "elements": {
+    "Na": 2,
+    "O": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Potassium Hydroxide",
+  "formula": "KOH",
+  "state": "solid",
+  "elements": {
+    "K": 1,
+    "O": 1,
+    "H": 1
+  }
+}

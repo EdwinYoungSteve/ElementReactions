@@ -1,0 +1,11 @@
+{
+  "name": "Sodium Bicarbonate",
+  "formula": "NaHCO3",
+  "state": "solid",
+  "elements": {
+    "Na": 1,
+    "H": 1,
+    "C": 1,
+    "O": 3
+  }
+}

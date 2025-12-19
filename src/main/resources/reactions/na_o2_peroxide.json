@@ -1,0 +1,12 @@
+{
+  "name": "Sodium Peroxide Formation",
+  "equation": "2Na + O2 = Na2O2",
+  "conditions": "heating",
+  "reactants": {
+    "Na": 2,
+    "O2": 1
+  },
+  "products": {
+    "Na2O2": 1
+  }
+}

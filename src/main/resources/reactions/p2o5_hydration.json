@@ -1,0 +1,12 @@
+{
+  "name": "Phosphorus Pentoxide Hydration",
+  "equation": "P2O5 + 3H2O = 2H3PO4",
+  "conditions": "room temperature",
+  "reactants": {
+    "P2O5": 1,
+    "H2O": 3
+  },
+  "products": {
+    "H3PO4": 2
+  }
+}

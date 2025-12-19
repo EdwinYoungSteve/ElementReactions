@@ -1,0 +1,12 @@
+{
+  "name": "Potassium Chlorate Disproportionation",
+  "equation": "4KClO3 = 3KClO4 + KCl",
+  "conditions": "super heat",
+  "reactants": {
+    "KClO3": 4
+  },
+  "products": {
+    "KClO4": 3,
+    "KCl": 1
+  }
+}

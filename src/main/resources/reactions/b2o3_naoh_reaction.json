@@ -1,0 +1,13 @@
+{
+  "name": "Sodium Metaborate Formation",
+  "equation": "B2O3 + 2NaOH = 2NaBO2 + H2O",
+  "conditions": "heating",
+  "reactants": {
+    "B2O3": 1,
+    "NaOH": 2
+  },
+  "products": {
+    "NaBO2": 2,
+    "H2O": 1
+  }
+}

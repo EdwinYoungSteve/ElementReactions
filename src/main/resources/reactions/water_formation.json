@@ -1,0 +1,12 @@
+{
+  "name": "Water Formation",
+  "equation": "2H2 + O2 = 2H2O",
+  "conditions": "ignition or catalyst",
+  "reactants": {
+    "H2": 2,
+    "O2": 1
+  },
+  "products": {
+    "H2O": 2
+  }
+}

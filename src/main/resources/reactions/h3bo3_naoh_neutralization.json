@@ -1,0 +1,13 @@
+{
+  "name": "Boric Acid and NaOH Reaction",
+  "equation": "H3BO3 + NaOH = NaBO2 + 2H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "H3BO3": 1,
+    "NaOH": 1
+  },
+  "products": {
+    "NaBO2": 1,
+    "H2O": 2
+  }
+}

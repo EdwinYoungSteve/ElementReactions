@@ -1,0 +1,13 @@
+{
+  "name": "Perchloric Acid Neutralization",
+  "equation": "HClO4 + NaOH = NaClO4 + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "HClO4": 1,
+    "NaOH": 1
+  },
+  "products": {
+    "NaClO4": 1,
+    "H2O": 1
+  }
+}

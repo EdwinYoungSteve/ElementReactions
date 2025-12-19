@@ -1,0 +1,9 @@
+{
+  "name": "Beryllium Oxide",
+  "formula": "BeO",
+  "state": "solid",
+  "elements": {
+    "Be": 1,
+    "O": 1
+  }
+}

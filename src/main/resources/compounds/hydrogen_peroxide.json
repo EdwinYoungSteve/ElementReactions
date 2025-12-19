@@ -1,0 +1,9 @@
+{
+  "name": "Hydrogen Peroxide",
+  "formula": "H2O2",
+  "state": "liquid",
+  "elements": {
+    "H": 2,
+    "O": 2
+  }
+}

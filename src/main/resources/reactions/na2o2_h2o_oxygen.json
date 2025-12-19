@@ -1,0 +1,13 @@
+{
+  "name": "Sodium Peroxide and CO2 Reaction",
+  "equation": "2Na2O2 + 2H2O = 4NaOH + O2",
+  "conditions": "room temperature",
+  "reactants": {
+    "Na2O2": 2,
+    "H2O": 2
+  },
+  "products": {
+    "NaOH": 4,
+    "O2": 1
+  }
+}

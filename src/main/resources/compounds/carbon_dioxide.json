@@ -1,0 +1,9 @@
+{
+  "name": "Carbon Dioxide",
+  "formula": "CO2",
+  "state": "gas",
+  "elements": {
+    "C": 1,
+    "O": 2
+  }
+}

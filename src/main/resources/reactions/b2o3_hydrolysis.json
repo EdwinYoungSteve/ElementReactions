@@ -1,0 +1,12 @@
+{
+  "name": "Boron Oxide Hydrolysis",
+  "equation": "B2O3 + 3H2O = 2H3BO3",
+  "conditions": "heating",
+  "reactants": {
+    "B2O3": 1,
+    "H2O": 3
+  },
+  "products": {
+    "H3BO3": 2
+  }
+}

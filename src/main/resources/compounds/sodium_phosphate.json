@@ -1,0 +1,10 @@
+{
+  "name": "Sodium Phosphate",
+  "formula": "Na3PO4",
+  "state": "solid",
+  "elements": {
+    "Na": 3,
+    "P": 1,
+    "O": 4
+  }
+}

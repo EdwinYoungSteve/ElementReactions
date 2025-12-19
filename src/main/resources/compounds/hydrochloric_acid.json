@@ -1,0 +1,9 @@
+{
+  "name": "Hydrochloric Acid",
+  "formula": "HCl(aq)",
+  "state": "aqueous",
+  "elements": {
+    "H": 1,
+    "Cl": 1
+  }
+}

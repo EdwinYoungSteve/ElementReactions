@@ -1,0 +1,12 @@
+{
+  "name": "Chlorous Acid Disproportionation",
+  "equation": "3HClO2 = HClO3 + 2HClO",
+  "conditions": "room temperature",
+  "reactants": {
+    "HClO2": 3
+  },
+  "products": {
+    "HClO3": 1,
+    "HClO": 2
+  }
+}

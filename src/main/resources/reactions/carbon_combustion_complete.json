@@ -1,0 +1,12 @@
+{
+  "name": "Carbon Combustion (Complete)",
+  "equation": "C + O2 = CO2",
+  "conditions": "sufficient oxygen, heating",
+  "reactants": {
+    "C": 1,
+    "O2": 1
+  },
+  "products": {
+    "CO2": 1
+  }
+}

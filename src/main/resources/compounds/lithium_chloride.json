@@ -1,0 +1,9 @@
+{
+  "name": "Lithium Chloride",
+  "formula": "LiCl",
+  "state": "solid",
+  "elements": {
+    "Li": 1,
+    "Cl": 1
+  }
+}

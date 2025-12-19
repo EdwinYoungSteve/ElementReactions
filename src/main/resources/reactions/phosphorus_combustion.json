@@ -1,0 +1,12 @@
+{
+  "name": "Phosphorus Combustion",
+  "equation": "P4 + 5O2 = 2P2O5",
+  "conditions": "heating",
+  "reactants": {
+    "P4": 1,
+    "O2": 5
+  },
+  "products": {
+    "P2O5": 2
+  }
+}

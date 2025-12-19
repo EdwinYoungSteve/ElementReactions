@@ -1,0 +1,10 @@
+{
+  "name": "Potassium Perchlorate",
+  "formula": "KClO4",
+  "state": "solid",
+  "elements": {
+    "K": 1,
+    "O": 4,
+    "Cl": 1
+  }
+}

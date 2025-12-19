@@ -1,0 +1,12 @@
+{
+  "name": "Ammonia Synthesis (Haber Process)",
+  "equation": "N2 + 3H2 = 2NH3",
+  "conditions": "high pressure, catalyst, heating",
+  "reactants": {
+    "N2": 1,
+    "H2": 3
+  },
+  "products": {
+    "NH3": 2
+  }
+}

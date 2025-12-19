@@ -1,0 +1,13 @@
+{
+  "name": "Sodium Bicarbonate Decomposition",
+  "equation": "2NaHCO3 = Na2CO3 + H2O + CO2",
+  "conditions": "heating",
+  "reactants": {
+    "NaHCO3": 2
+  },
+  "products": {
+    "Na2CO3": 1,
+    "H2O": 1,
+    "CO2": 1
+  }
+}

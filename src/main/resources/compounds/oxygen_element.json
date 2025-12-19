@@ -1,0 +1,8 @@
+{
+  "name": "Oxygen",
+  "formula": "O2",
+  "state": "gas",
+  "elements": {
+    "O": 2
+  }
+}

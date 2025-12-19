@@ -1,0 +1,9 @@
+{
+  "name": "Magnesium Oxide",
+  "formula": "MgO",
+  "state": "solid",
+  "elements": {
+    "Mg": 1,
+    "O": 1
+  }
+}

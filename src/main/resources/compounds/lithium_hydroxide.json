@@ -1,0 +1,10 @@
+{
+  "name": "Lithium Hydroxide",
+  "formula": "LiOH",
+  "state": "solid",
+  "elements": {
+    "Li": 1,
+    "O": 1,
+    "H": 1
+  }
+}

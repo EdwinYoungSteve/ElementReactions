@@ -1,0 +1,12 @@
+{
+  "name": "Sulfur Combustion",
+  "equation": "S + O2 = SO2",
+  "conditions": "heating",
+  "reactants": {
+    "S": 1,
+    "O2": 1
+  },
+  "products": {
+    "SO2": 1
+  }
+}

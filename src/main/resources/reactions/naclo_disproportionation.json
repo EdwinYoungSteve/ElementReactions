@@ -1,0 +1,12 @@
+{
+  "name": "Sodium Hypochlorite Disproportionation",
+  "equation": "3NaClO = 2NaCl + NaClO3",
+  "conditions": "heating",
+  "reactants": {
+    "NaClO": 3
+  },
+  "products": {
+    "NaCl": 2,
+    "NaClO3": 1
+  }
+}

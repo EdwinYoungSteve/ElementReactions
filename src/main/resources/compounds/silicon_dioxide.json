@@ -1,0 +1,9 @@
+{
+  "name": "Silicon Dioxide",
+  "formula": "SiO2",
+  "state": "solid",
+  "elements": {
+    "Si": 1,
+    "O": 2
+  }
+}

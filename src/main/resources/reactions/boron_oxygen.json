@@ -1,0 +1,12 @@
+{
+  "name": "Boron and Oxygen Reaction",
+  "equation": "4B + 3O2 = 2B2O3",
+  "conditions": "heating",
+  "reactants": {
+    "B": 4,
+    "O2": 3
+  },
+  "products": {
+    "B2O3": 2
+  }
+}

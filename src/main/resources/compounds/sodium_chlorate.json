@@ -1,0 +1,10 @@
+{
+  "name": "Sodium Chlorate",
+  "formula": "NaClO3",
+  "state": "solid",
+  "elements": {
+    "Na": 1,
+    "Cl": 1,
+    "O": 3
+  }
+}

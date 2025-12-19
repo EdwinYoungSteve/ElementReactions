@@ -1,0 +1,13 @@
+{
+  "name": "Carbonic Acid and NaOH Reaction (1:2)",
+  "equation": "H2CO3 + 2NaOH = Na2CO3 + 2H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "H2CO3": 1,
+    "NaOH": 2
+  },
+  "products": {
+    "Na2CO3": 1,
+    "H2O": 2
+  }
+}

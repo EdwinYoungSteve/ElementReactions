@@ -1,0 +1,9 @@
+{
+  "name": "Hydrogen Fluoride",
+  "formula": "HF",
+  "state": "gas",
+  "elements": {
+    "H": 1,
+    "F": 1
+  }
+}

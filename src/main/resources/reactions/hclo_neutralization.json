@@ -1,0 +1,13 @@
+{
+  "name": "Hypochlorous Acid Neutralization",
+  "equation": "HClO + NaOH = NaClO + H2O",
+  "conditions": "room temperature",
+  "reactants": {
+    "HClO": 1,
+    "NaOH": 1
+  },
+  "products": {
+    "NaClO": 1,
+    "H2O": 1
+  }
+}

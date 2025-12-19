@@ -1,0 +1,10 @@
+{
+  "name": "Ammonium Chloride",
+  "formula": "NH4Cl",
+  "state": "solid",
+  "elements": {
+    "N": 1,
+    "H": 4,
+    "Cl": 1
+  }
+}

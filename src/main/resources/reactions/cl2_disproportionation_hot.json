@@ -1,0 +1,14 @@
+{
+  "name": "Chlorine Disproportionation in Hot Base",
+  "equation": "3Cl2 + 6NaOH = 5NaCl + NaClO3 + 3H2O",
+  "conditions": "heating",
+  "reactants": {
+    "Cl2": 3,
+    "NaOH": 6
+  },
+  "products": {
+    "NaCl": 5,
+    "NaClO3": 1,
+    "H2O": 3
+  }
+}

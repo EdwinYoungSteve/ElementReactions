@@ -1,0 +1,9 @@
+{
+  "name": "Sulfur Dioxide",
+  "formula": "SO2",
+  "state": "gas",
+  "elements": {
+    "S": 1,
+    "O": 2
+  }
+}

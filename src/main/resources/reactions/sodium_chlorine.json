@@ -1,0 +1,12 @@
+{
+  "name": "Sodium and Chlorine Reaction",
+  "equation": "2Na + Cl2 = 2NaCl",
+  "conditions": "ignition or heating",
+  "reactants": {
+    "Na": 2,
+    "Cl2": 1
+  },
+  "products": {
+    "NaCl": 2
+  }
+}
